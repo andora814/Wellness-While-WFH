@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import tip from '../components/TipCard.js';
+import TipCard from '../components/TipCard.js';
 
 const TipPage = (props) => {
   const [tips, setTips] = useState([]);
@@ -12,14 +12,13 @@ const TipPage = (props) => {
   const getTips = async () => {
     const res = await axios.get('http://localhost:3001/tips');
     setTips(res.data.tips);
-    console.log(res.data.tips);
   };
 
   return (
     <div>
-      {/* {tips.map((tip) => (
+      {tips.map((tip) => (
         <TipCard key={tip.id} {...tip} />
-      ))} */}
+      ))}
     </div>
   );
 };
