@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import TipCard from '../components/TipCard.js';
+import TipForm from '../components/TipForm.js';
 
 const TipPage = (props) => {
   const [tips, setTips] = useState([]);
@@ -16,6 +17,7 @@ const TipPage = (props) => {
 
   return (
     <div>
+      <TipForm />
       {tips.map((tip) => (
         <TipCard key={tip.id} {...tip} />
       ))}
