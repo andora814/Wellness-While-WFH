@@ -19,3 +19,8 @@ footer {
   height: 3em;
   color: white
 }
+
+.tip-container {
+  display: grid;
+  flex-direction: 1fr 1fr 1fr;
+}

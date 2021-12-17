@@ -6,7 +6,7 @@ router.get('/', (req, res) => res.send('This is root!'));
 
 router.get('/tips', controllers.getAllTips);
 router.get('/tips/:id', controllers.getTipById);
-router.post('/tips', controllers.createTip);
+router.post('/addtip', controllers.createTip);
 router.put('/tips/:id', controllers.updateTip);
 router.delete('/tips/:id', controllers.deleteTip);
 
