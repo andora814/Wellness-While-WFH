@@ -27,7 +27,7 @@ const TipPage = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('localhost:3001/addtip', form);
+    await axios.post('http://localhost:3001/addtip', form);
     console.log('the post request is working, hopefully');
   };
 
