@@ -11,6 +11,10 @@ const About = () => {
         extremely important. Please take advantage of this site as a way to stay
         healthy, happy and productive!
       </h2>
+      <div className="button-container">
+        <button>YOGA</button>
+        <button>TIPS</button>
+      </div>
     </div>
   );
 };

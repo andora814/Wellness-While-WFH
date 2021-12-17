@@ -7,7 +7,9 @@ const TipCard = (props) => {
         <h2>
           "{props.description}" ~{props.name}
         </h2>
-        <button>Delete Tip</button>
+        <button onClick={props.onClick} id={props.id} {...props}>
+          Delete Tip
+        </button>
       </section>
     </div>
   );

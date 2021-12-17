@@ -20,22 +20,30 @@ const TipPage = (props) => {
     setTips(res.data.tips);
   };
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = async (e) => {
+    await setForm({ ...form, [e.target.name]: e.target.value });
     console.log({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios.post('http://localhost:3001/addtip', form);
-    console.log('the post request is working, hopefully');
+    console.log(e.target.id);
+  };
+
+  const handleClick = async (e) => {
+    e.preventDefault();
+    console.log(e.target);
+    console.log(props.match.params._id);
+    await axios.delete(`http://localhost:3001/tips/${props.match.params._id}`);
+    console.log('the delete request is working, hopefully');
   };
 
   return (
     <div>
       <TipForm onChange={handleChange} onSubmit={handleSubmit} />
       {tips.map((tip) => (
-        <TipCard key={tip.id} {...tip} />
+        <TipCard key={tip.id} {...tip} onClick={handleClick} />
       ))}
     </div>
   );
