@@ -24,3 +24,27 @@ footer {
   display: grid;
   flex-direction: 1fr 1fr 1fr;
 }
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.home-page-buttons {
+  padding: 20px;
+  border-radius: 25px;
+  background-color: #b8b8b8;
+  margin: auto;
+}
+
+img {
+  border-radius: 25px;
+  width: 500px;
+  height: 700px;
+}
+
+body {
+  background-color: #71aac0;
+}

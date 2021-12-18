@@ -12,8 +12,14 @@ const About = () => {
         healthy, happy and productive!
       </h2>
       <div className="button-container">
-        <button>YOGA</button>
-        <button>TIPS</button>
+        <button className="home-page-buttons">
+          <h1>YOGA</h1>
+          <img src="https://images.unsplash.com/photo-1586035758264-c5c685f55e9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG1lZGl0YXRpb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" />
+        </button>
+        <button className="home-page-buttons">
+          <h1>TIPS</h1>
+          <img src="https://images.unsplash.com/photo-1513128034602-7814ccaddd4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQxfHx5b2dhJTIwYXQlMjBkZXNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" />
+        </button>
       </div>
     </div>
   );
