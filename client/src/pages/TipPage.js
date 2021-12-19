@@ -33,10 +33,7 @@ const TipPage = (props) => {
 
   const handleClick = async (e) => {
     e.preventDefault();
-    console.log(e.target);
-    console.log(`the name is: ` + e.target.name);
-    console.log(`the id is: ` + e.target.description);
-    // await axios.delete(`http://localhost:3001/tips/${props.match.params._id}`);
+    await axios.delete(`http://localhost:3001/tips/${e.target.id}`);
   };
 
   return (
