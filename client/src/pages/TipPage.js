@@ -31,6 +31,7 @@ const TipPage = (props) => {
 
   const handleDelete = async (e) => {
     e.preventDefault();
+    console.log(e.target.id);
     await axios.delete(`http://localhost:3001/tips/${e.target.id}`);
   };
 
@@ -44,7 +45,7 @@ const TipPage = (props) => {
       {tips.map((tip) => (
         <TipCard
           key={tip.id}
-          id={tip.id}
+          // id={tip.id}
           {...tip}
           onClick={handleDelete}
           onClickEdit={handleEditClick}

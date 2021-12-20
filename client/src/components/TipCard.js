@@ -13,18 +13,13 @@ const TipCard = (props) => {
       description: props.description
     };
     await axios.put(`http://localhost:3001/updatetip/${props._id}`, updatedTip);
-    console.log(e.target[0].value);
+
     setTipName(newName);
-    console.log('tipName is: ' + tipName);
-    console.log('tip id is : ' + e.target.id);
-    // setTipName=tipName + ", and " e.target.name
   };
 
   const handleEditForm = (e) => {
     e.preventDefault();
     setTipName(e.target.value);
-    // console.log('tipName is: ' + tipName);
-    // console.log('tip id is : ' + e.target.id);
   };
 
   return (
@@ -36,7 +31,7 @@ const TipCard = (props) => {
         <button onClick={props.onClick} id={props._id} {...props}>
           Delete Tip
         </button>
-        {/* <button onClick={props.onClickEdit}>Edit Tip</button> */}
+
         <EditTipForm
           onChange={handleEditForm}
           onSubmit={handleEditSubmit}
