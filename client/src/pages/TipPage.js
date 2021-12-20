@@ -22,17 +22,18 @@ const TipPage = (props) => {
 
   const handleChange = async (e) => {
     await setForm({ ...form, [e.target.name]: e.target.value });
-    console.log({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios.post('http://localhost:3001/addtip', form);
-    console.log(e.target.id);
   };
 
   const handleClick = async (e) => {
     e.preventDefault();
+    // console.log(e.target.name);
+    // console.log(e.target.id);
+    // console.log(e.target.description);
     await axios.delete(`http://localhost:3001/tips/${e.target.id}`);
   };
 
