@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 const TipForm = (props) => {
-  const [name, setName] = useState('');
-  const [description, setDescription] = useState('');
-
   return (
     <div>
       <h1>
