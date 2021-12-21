@@ -16,7 +16,7 @@ const About = () => {
         <button className="home-page-buttons">
           <Link to="/yoga">YOGA</Link>
           <img
-            src="https://images.unsplash.com/photo-1586035758264-c5c685f55e9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG1lZGl0YXRpb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+            src="https://thumbor.granitemedia.com/crescent-moon/bFP4UB6S5HufjF1xqIXinpxLZgw=/800x800/filters:format(webp):quality(80)/granite-web-prod/4e/01/4e01a4944ea44a49aa19506a922b0ee9.jpg"
             alt="yoga pose"
           />
         </button>

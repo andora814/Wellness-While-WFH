@@ -7,7 +7,7 @@ const seedPoses = async () => {
   const poses = [
     {
       english: 'Downward Facing Dog',
-      sanskrit: 'Adho mukha svanasana',
+      sanskrit: 'Adho Mukha Svanasana',
       benefits:
         'One of the most familiar yoga postures, downward facing dog benefits include a stronger low back, hands, hamstrings, calves and wrists.',
       image:
@@ -17,7 +17,7 @@ const seedPoses = async () => {
     },
     {
       english: 'Upward Facing Dog',
-      sanskrit: 'Urdhva mukha svanasana',
+      sanskrit: 'Urdhva Mukha Svanasana',
       benefits:
         'Upward facing dog stretches and strengthens your spine while improving posture and opening your shoulders and chest.',
       image:
@@ -35,7 +35,7 @@ const seedPoses = async () => {
     },
     {
       english: 'Happy Baby',
-      sanskrit: 'Ananda balasana',
+      sanskrit: 'Ananda Balasana',
       benefits:
         'Happy Baby pose relieves stress and fatigue, but also opens your hips, inner thighs and groin while releasing tension in your low back.',
       image:
