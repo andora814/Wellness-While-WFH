@@ -16,7 +16,7 @@ const YogaPosePage = (props) => {
     setPoses(res.data.poses);
   };
   return (
-    <div>
+    <div className="container-grid">
       {poses.map((pose) => (
         <YogaPoseCard key={pose.id} {...pose} />
       ))}
