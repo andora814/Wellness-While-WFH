@@ -10,4 +10,6 @@ router.post('/addtip', controllers.createTip);
 router.put('/updatetip/:id', controllers.updateTip);
 router.delete('/tips/:id', controllers.deleteTip);
 
+router.get('/poses', controllers.getAllPoses);
+
 module.exports = router;

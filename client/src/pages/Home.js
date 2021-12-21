@@ -14,7 +14,7 @@ const About = () => {
       </h2>
       <div className="button-container">
         <button className="home-page-buttons">
-          <h1>YOGA</h1>
+          <Link to="/yoga">YOGA</Link>
           <img src="https://images.unsplash.com/photo-1586035758264-c5c685f55e9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG1lZGl0YXRpb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" />
         </button>
         <button className="home-page-buttons">

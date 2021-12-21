@@ -1,4 +1,5 @@
 const Tip = require('../models/tip');
+const Pose = require('../models/pose');
 
 const getAllTips = async (req, res) => {
   try {
@@ -64,10 +65,20 @@ const deleteTip = async (req, res) => {
   }
 };
 
+const getAllPoses = async (req, res) => {
+  try {
+    const poses = await Pose.find();
+    return res.status(200).json({ poses });
+  } catch (error) {
+    return res.status(500).send(error.message);
+  }
+};
+
 module.exports = {
   createTip,
   getAllTips,
   getTipById,
   updateTip,
-  deleteTip
+  deleteTip,
+  getAllPoses
 };

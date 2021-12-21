@@ -41,6 +41,7 @@ const TipPage = (props) => {
 
   return (
     <div>
+      <h1> Tips for Staying Well While Working From Home </h1>
       <TipForm onChange={handleForm} onSubmit={handleCreate} />
       {tips.map((tip) => (
         <TipCard

@@ -6,6 +6,7 @@ import Home from './pages/Home.js';
 import About from './pages/About.js';
 import Footer from './components/Footer.js';
 import TipPage from './pages/TipPage.js';
+import YogaPosePage from './pages/YogaPosePage.js';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/tips" component={TipPage} />
+          <Route path="/yoga" component={YogaPosePage} />
         </Switch>
       </main>
       <Footer />

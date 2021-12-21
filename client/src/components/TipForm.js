@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 const TipForm = (props) => {
   return (
     <div>
-      <h1>
+      <h2>
         Please feel free to add any tips or best practices you have learned
         while on your own work from home journey!
-      </h1>
+      </h2>
       <form onSubmit={props.onSubmit}>
         <input
           type="text"

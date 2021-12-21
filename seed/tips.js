@@ -3,7 +3,7 @@ const Tip = require('../models/tip');
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-const main = async () => {
+const seedTips = async () => {
   const tips = [
     {
       name: 'Doran',
@@ -23,7 +23,7 @@ const main = async () => {
   console.log('Created some tips!');
 };
 const run = async () => {
-  await main();
+  await seedTips();
   db.close();
 };
 
