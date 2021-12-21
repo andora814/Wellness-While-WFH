@@ -15,12 +15,18 @@ const About = () => {
       <div className="button-container">
         <button className="home-page-buttons">
           <Link to="/yoga">YOGA</Link>
-          <img src="https://images.unsplash.com/photo-1586035758264-c5c685f55e9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG1lZGl0YXRpb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" />
+          <img
+            src="https://images.unsplash.com/photo-1586035758264-c5c685f55e9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG1lZGl0YXRpb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+            alt="yoga pose"
+          />
         </button>
         <button className="home-page-buttons">
           <Link to="/tips">TIPS</Link>
           {/* HOW DO I PUT THE LINK ON THE WHOLE BUTTON INSTEAD OF JUST THE TEXT? look at RAWG for reference */}
-          <img src="https://images.unsplash.com/photo-1513128034602-7814ccaddd4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQxfHx5b2dhJTIwYXQlMjBkZXNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" />
+          <img
+            src="https://images.unsplash.com/photo-1513128034602-7814ccaddd4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQxfHx5b2dhJTIwYXQlMjBkZXNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            alt="desk calendar"
+          />
         </button>
       </div>
     </div>

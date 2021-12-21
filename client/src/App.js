@@ -1,4 +1,4 @@
-import react from 'react';
+// import react from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './styles/App.css';
 import Header from './components/Header.js';
