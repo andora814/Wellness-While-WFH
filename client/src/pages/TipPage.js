@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import { useParams } from 'react-router-dom';
+
 import axios from 'axios';
 import TipCard from '../components/TipCard.js';
 import TipForm from '../components/TipForm.js';
@@ -46,7 +46,6 @@ const TipPage = (props) => {
       {tips.map((tip) => (
         <TipCard
           key={tip.id}
-          // id={tip.id}
           {...tip}
           onClick={handleDelete}
           onClickEdit={handleEditClick}
