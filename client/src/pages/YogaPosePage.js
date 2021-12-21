@@ -9,6 +9,11 @@ const YogaPosePage = (props) => {
   const [searched, toggleSearched] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
+  const filteredPoses =
+    searchQuery.length === 0
+      ? poses
+      : poses.filter((pose) => pose.benefits.includes(searchQuery));
+
   useEffect(() => {
     getPoses();
   });
@@ -18,37 +23,32 @@ const YogaPosePage = (props) => {
     setPoses(res.data.poses);
   };
 
-  // const getSearchResults = async (e) => {
-  //   e.preventDefault();
-  //   const res = await axios.get(`http://localhost:3001/poses`);
-  //   setSearchResults(res.data.results);
-  //   toggleSearched(true);
-  //   setSearchQuery('');
-  // };
+  const getSearchResults = async (e) => {
+    e.preventDefault();
+    setPoses(filteredPoses);
+    toggleSearched(true);
+    setSearchQuery('');
+    console.log(filteredPoses);
+    // window.location.reload();
+  };
 
   const handleChange = (e) => {
-    console.log(e.target.value);
     setSearchQuery(e.target.value);
     console.log(filteredPoses);
   };
-
-  const filteredPoses =
-    searchQuery.length === 0
-      ? poses
-      : poses.filter((pose) => pose.benefits.includes(searchQuery));
 
   return (
     <div>
       <div className="search">
         <Search
           value={searchQuery}
-          // onSubmit={getSearchResults}
+          onSubmit={getSearchResults}
           onChange={handleChange}
         />
       </div>
       <div className="container-grid">
-        {poses.map((pose) => (
-          <YogaPoseCard key={pose.id} {...pose} poses={filteredPoses} />
+        {filteredPoses.map((pose) => (
+          <YogaPoseCard key={pose.id} {...pose} />
         ))}
       </div>
     </div>
