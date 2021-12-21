@@ -11,5 +11,7 @@ router.put('/updatetip/:id', controllers.updateTip);
 router.delete('/tips/:id', controllers.deleteTip);
 
 router.get('/poses', controllers.getAllPoses);
+router.post('/addpose', controllers.createPose);
+router.delete('/poses/:id', controllers.deletePose);
 
 module.exports = router;

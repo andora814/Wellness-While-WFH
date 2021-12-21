@@ -74,11 +74,38 @@ const getAllPoses = async (req, res) => {
   }
 };
 
+const createPose = async (req, res) => {
+  try {
+    const pose = await new Pose(req.body);
+    await pose.save();
+    return res.status(201).json({
+      pose
+    });
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+};
+
+const deletePose = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const deleted = await Pose.findByIdAndDelete(id);
+    if (deleted) {
+      return res.status(200).send('Pose deleted');
+    }
+    throw new Error('Pose not found');
+  } catch (error) {
+    return res.status(500).send(error.message);
+  }
+};
+
 module.exports = {
   createTip,
   getAllTips,
   getTipById,
   updateTip,
   deleteTip,
-  getAllPoses
+  getAllPoses,
+  createPose,
+  deletePose
 };
