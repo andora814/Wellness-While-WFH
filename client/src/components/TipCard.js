@@ -25,13 +25,13 @@ const TipCard = (props) => {
   return (
     <div>
       <section className="tip-card">
-        <h2>
+        <h3>
           "{props.description}" ~{props.name}
-        </h2>
+        </h3>
         <button onClick={props.onClick} id={props._id} {...props}>
           Delete Tip
         </button>
-
+        <br></br>
         <EditTipForm
           onChange={handleEditForm}
           onSubmit={handleEditSubmit}

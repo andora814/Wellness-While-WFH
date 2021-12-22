@@ -38,7 +38,7 @@ header nav a {
 .home-page-buttons {
   padding: 20px;
   border-radius: 25px;
-  background-color: white;
+  background-color: #e7e6ed;
   margin: auto;
 }
 
@@ -88,5 +88,17 @@ img {
 }
 
 h1 {
+  font-size: 75px;
   font-family: 'Handlee', cursive;
+}
+
+.about-me {
+  margin: auto;
+  padding: 3em;
+}
+
+.about-me-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
