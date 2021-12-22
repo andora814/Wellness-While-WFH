@@ -63,7 +63,7 @@ const App = () => {
           />
         </Switch>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

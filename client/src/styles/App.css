@@ -1,5 +1,5 @@
 header {
-  background-color: white;
+  background-color: #f6e5e2;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -12,7 +12,7 @@ header nav a {
 }
 
 footer {
-  background-color: white;
+  background-color:  #f6e5e2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +46,14 @@ img {
 }
 
 body {
-  background-color: #bbd5d6;
+  /* background-image: url("https://images.unsplash.com/photo-1611255550543-b5ecb01dfddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"); */
+  background-color: 
+#5F8575;
+  font-family: 'Nunito', sans-serif;
+  color: 
+  #f6e5e2;
+  background-size: 100% auto;
+  background-repeat: no-repeat
 }
 
 .pose-content .image-container {
@@ -67,4 +74,11 @@ body {
   grid-gap: 2em;
   grid-template-columns: repeat(auto-fill, 500px);
   justify-content: center;
+}
+
+img {
+  display: block; 
+  width: 25vw;
+  height: 25vw; 
+  /* object-fit: cover; */
 }
