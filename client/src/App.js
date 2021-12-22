@@ -43,27 +43,29 @@ const App = () => {
 
   return (
     <div>
-      <Header />
-      <main>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/tips" component={TipPage} />
-          <Route
-            path="/yoga"
-            render={(props) => (
-              <YogaPosePage
-                {...props}
-                poses={poses}
-                searchQuery={searchQuery}
-                getSearchResults={getSearchResults}
-                handleChange={handleChange}
-              />
-            )}
-          />
-        </Switch>
-      </main>
-      {/* <Footer /> */}
+      <div>
+        <Header />
+        <main>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/tips" component={TipPage} />
+            <Route
+              path="/yoga"
+              render={(props) => (
+                <YogaPosePage
+                  {...props}
+                  poses={poses}
+                  searchQuery={searchQuery}
+                  getSearchResults={getSearchResults}
+                  handleChange={handleChange}
+                />
+              )}
+            />
+          </Switch>
+        </main>
+        {/* <Footer /> */}
+      </div>
     </div>
   );
 };

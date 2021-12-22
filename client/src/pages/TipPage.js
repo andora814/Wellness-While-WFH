@@ -41,17 +41,22 @@ const TipPage = (props) => {
 
   return (
     <div>
-      <h1> Tips and Tricks </h1>
-      <TipForm onChange={handleForm} onSubmit={handleCreate} />
-      {tips.map((tip) => (
-        <TipCard
-          key={tip.id}
-          {...tip}
-          onClick={handleDelete}
-          onClickEdit={handleEditClick}
-          isEditButtonClicked={false}
-        />
-      ))}
+      <section className="tips">
+        <h1> Tips and Tricks </h1>
+
+        <TipForm onChange={handleForm} onSubmit={handleCreate} />
+        <section className="tip-container">
+          {tips.map((tip) => (
+            <TipCard
+              key={tip.id}
+              {...tip}
+              onClick={handleDelete}
+              onClickEdit={handleEditClick}
+              isEditButtonClicked={false}
+            />
+          ))}
+        </section>
+      </section>
     </div>
   );
 };
