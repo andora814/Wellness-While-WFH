@@ -1,5 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Handlee&family=Roboto:wght@300&display=swap');
+
 header {
-  background-color: #f6e5e2;
+  background-color: #5F8575;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -11,14 +14,14 @@ header nav a {
   margin: 0 1em;
 }
 
-footer {
+/* footer {
   background-color:  #f6e5e2;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 3em;
   color: black
-}
+} */
 
 .tip-container {
   display: grid;
@@ -46,12 +49,13 @@ img {
 }
 
 body {
-  /* background-image: url("https://images.unsplash.com/photo-1611255550543-b5ecb01dfddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"); */
+  /* background-image: url("https://images.unsplash.com/photo-1611255550543-b5ecb01dfddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+  background-image: url("https://c1.wallpaperflare.com/preview/419/429/240/leaf-plant-eucalyptus-green.jpg"); */
   background-color: 
 #5F8575;
   font-family: 'Nunito', sans-serif;
-  color: 
-  #f6e5e2;
+  /* color: #545b53; */
+  color: #e7e6ed;
   background-size: 100% auto;
   background-repeat: no-repeat
 }
@@ -81,4 +85,8 @@ img {
   width: 25vw;
   height: 25vw; 
   /* object-fit: cover; */
+}
+
+h1 {
+  font-family: 'Handlee', cursive;
 }

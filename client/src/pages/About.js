@@ -3,6 +3,7 @@ import React from 'react';
 const About = () => {
   return (
     <div>
+      <h1>About Me</h1>
       <h2>
         In 2020, many of us were forced to work from home due to COVID-19. As a
         result, companies are re-evaluating the “future of work”, and remote

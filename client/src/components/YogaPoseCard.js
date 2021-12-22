@@ -13,6 +13,7 @@ const YogaPoseCard = (props) => {
         <div>
           <b>Benefits:</b> {props.benefits}
         </div>
+        <br></br>
         <div>
           <b>Description:</b> {props.description}
         </div>
