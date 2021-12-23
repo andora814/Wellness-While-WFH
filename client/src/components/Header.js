@@ -7,9 +7,10 @@ const Header = () => {
       <h3 className="website-name"> Wellness While Working from Home</h3>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+
         <Link to="/yoga">Yoga</Link>
         <Link to="/tips">Tips</Link>
+        <Link to="/about">About</Link>
       </nav>
     </header>
   );
