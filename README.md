@@ -34,14 +34,14 @@ TBD
 TBD
 ***
 ### ***Future Updates***
-- [ ] TBD
-- [ ] TBD
-- [ ] TBD
-- [ ] TBD
-- [ ] TBD
-- [ ] TBD
+- [ ] Add more yoga poses, descriptions and sequences
+- [ ] Enhance search functionality
+- [ ] Allow users to select and save yoga poses 
+- [ ] Add daily meditation using Deep Meditate API
+
 ***
 ### ***Credits***
 #### Yoga Images & Descriptions: [Work+Money Article](https://www.workandmoney.com/s/yoga-poses-to-combat-sitting-all-day-bc703e07faca4036)
 #### Sanskrit Names: [Yogateket Wiki](https://www.yogateket.com/blog/yoga-poses-names-sanskrit-pranayama)
+#### Self Care Tip: [Everyday Health Article](https://www.everydayhealth.com/healthy-living/your-work-from-home-survival-guide-for-self-care/)
 #### Background Image: [Unsplash Search](https://unsplash.com/photos/Hzz7AEyLhZk)
