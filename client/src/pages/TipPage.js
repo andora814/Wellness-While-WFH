@@ -31,12 +31,8 @@ const TipPage = (props) => {
 
   const handleDelete = async (e) => {
     e.preventDefault();
-    console.log(e.target.id);
-    await axios.delete(`http://localhost:3001/tips/${e.target.id}`);
-  };
 
-  const handleEditClick = async (e) => {
-    console.log('handleEdit is being called');
+    await axios.delete(`http://localhost:3001/tips/${e.target.id}`);
   };
 
   return (
@@ -51,7 +47,6 @@ const TipPage = (props) => {
               key={tip.id}
               {...tip}
               onClick={handleDelete}
-              onClickEdit={handleEditClick}
               isEditButtonClicked={false}
             />
           ))}
