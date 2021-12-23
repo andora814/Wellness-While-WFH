@@ -22,7 +22,6 @@ const App = () => {
   const getPoses = async () => {
     const res = await axios.get('http://localhost:3001/poses');
     setPoses(res.data.poses);
-    console.log('get pose is firing');
   };
 
   const getSearchResults = async (e) => {
@@ -31,12 +30,11 @@ const App = () => {
       searchQuery.length === 0
         ? poses
         : poses.filter((pose) => pose.benefits.includes(searchQuery));
-    console.log(filteredPoses);
     setPoses(filteredPoses);
-    console.log(poses);
     toggleSearched(true);
     setSearchQuery('');
   };
+
   const handleChange = (e) => {
     setSearchQuery(e.target.value);
   };
@@ -64,7 +62,6 @@ const App = () => {
             />
           </Switch>
         </main>
-        {/* <Footer /> */}
       </div>
     </div>
   );

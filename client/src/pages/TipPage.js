@@ -31,7 +31,6 @@ const TipPage = (props) => {
 
   const handleDelete = async (e) => {
     e.preventDefault();
-
     await axios.delete(`http://localhost:3001/tips/${e.target.id}`);
   };
 
