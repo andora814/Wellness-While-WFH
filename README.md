@@ -7,9 +7,9 @@
 ####
 This is a website to help you focus on self care and wellness while working from home.
 ####
-In 2020, many of us were forced to work from home due to COVID-19. As a result, companies are re-evaluating the “future of work”, and remote work will most likely become part of our new normal. It is so easy for “working from home” to feel like “living at work”, which makes self-care extremely important. Please take advantage of this site as a way to stay healthy, happy and productive!
+In 2020, many of us were forced to work from home due to COVID-19. As a result, companies are re-evaluating the “future of work”, and remote work will likely become part of our new normal. It is so easy for “working from home” to feel like “living at work”, which makes self-care extremely important.
 
-This site lists yoga poses that are beneficial after sitting at a desk all day, and also tips and best practices for focusing on wellness while working from home. You can search the yoga poses by benefits, and you can add your own tips to the list!
+This site lists yoga poses that are beneficial after sitting at a desk all day, and a search functionality to find poses that will benefit specific body parts. The site also has tips and best practices for focusing on wellness while working from home. You can search the yoga poses by body part (i.e. neck, shoulders, hips, etc.) to find the poses that will benefit you the most. You can add to the tips, and also edit and delete!
 
 ***
 ### ***Technologies***
@@ -42,9 +42,6 @@ TBD
 - [ ] TBD
 ***
 ### ***Credits***
-TBD
-###
-TBD
-###
-TBD
-***
+#### Yoga Images & Descriptions: [Work+Money Article](https://www.workandmoney.com/s/yoga-poses-to-combat-sitting-all-day-bc703e07faca4036)
+#### Sanskrit Names: [Yogateket Wiki](https://www.yogateket.com/blog/yoga-poses-names-sanskrit-pranayama)
+#### Background Image: [Unsplash Search](https://unsplash.com/photos/Hzz7AEyLhZk)
