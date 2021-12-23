@@ -12,15 +12,15 @@ const TipForm = (props) => {
           type="text"
           onChange={props.onChange}
           name="name"
-          placeholder={'Your name'}
+          placeholder={'Enter your name'}
         />
         <input
           type="text-area"
           onChange={props.onChange}
           name="description"
-          placeholder={'Your tip'}
+          placeholder={'Enter your tip'}
         />
-        <button className="button">Submit</button>
+        <button className="button">Create Tip</button>
       </form>
     </div>
   );

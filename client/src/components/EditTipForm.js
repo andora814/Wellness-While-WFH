@@ -13,7 +13,7 @@ const EditTipForm = (props) => {
           value={props.value}
         />
 
-        <button className="button">Add your name</button>
+        <button className="button">Edit Tip</button>
       </form>
     </div>
   );

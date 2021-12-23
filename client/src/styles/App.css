@@ -133,6 +133,7 @@ h3 {
   padding: 1em;
   border-style: solid;
   border-color: #5F8575;
+  border-radius: 25px;
 }
 
 .home-div, .page-div, .tip-div, .yoga-page-div {
