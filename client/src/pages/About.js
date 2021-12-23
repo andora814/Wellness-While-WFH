@@ -10,10 +10,6 @@ const About = () => {
             src="https://i.imgur.com/6ovHBMm.jpg"
             alt="professional photo"
           ></img>
-          {/* <img
-          src="https://i.imgur.com/PJBYgxH.jpg"
-          alt="yoga pose in belize"
-        ></img> */}
         </section>
         <section className="about-me-description">
           <h2>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import YogaPoseCard from '../components/YogaPoseCard.js';
-import axios from 'axios';
+
 import Search from '../components/Search.js';
 
 const YogaPosePage = (props) => {

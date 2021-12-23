@@ -39,17 +39,9 @@ const updateTip = async (req, res) => {
   try {
     const { id } = req.params;
     await Tip.findByIdAndUpdate(id, req.body, { new: true }, (err, tip) => {
-      // if (err) {
-      //   res.status(500).send(err);
-      // }
-      // if (!review) {
-      //   res.status(500).send('Review not found!');
-      // }
       return res.status(200).json(tip);
     });
-  } catch (error) {
-    // res.status(500).send(error.message);
-  }
+  } catch (error) {}
 };
 
 const deleteTip = async (req, res) => {
