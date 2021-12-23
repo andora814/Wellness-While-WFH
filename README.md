@@ -27,17 +27,19 @@ This site lists yoga poses that are beneficial after sitting at a desk all day, 
 ***
 ### ***Screenshots***
 #### 
-TBD
+![Home Page](https://i.imgur.com/FqJsFxd.png)
 ###
-TBD
+![Yoga Pose Page](https://i.imgur.com/Zq686Cl.png)
 ###
-TBD
+![Tip Page](https://i.imgur.com/ewJeIAu.png)
 ***
 ### ***Future Updates***
+- [ ] Make compatible with phones and tablets
 - [ ] Add more yoga poses, descriptions and sequences
 - [ ] Enhance search functionality
 - [ ] Allow users to select and save yoga poses 
 - [ ] Add daily meditation using Deep Meditate API
+- [ ] Deploy on Heroku
 
 ***
 ### ***Credits***
