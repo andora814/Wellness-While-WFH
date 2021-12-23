@@ -9,7 +9,7 @@ const EditTipForm = (props) => {
           type="text"
           onChange={props.onChange}
           name="name"
-          placeholder={props.name}
+          placeholder="Enter your name"
           value={props.value}
         />
 

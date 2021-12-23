@@ -7,7 +7,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   height: 3em;
-  color: black
+  color: #e7eeeb;
 }
 
 header nav a {
@@ -144,4 +144,14 @@ h3 {
 .pose-content {
   padding: 1em;
   border-radius: 25px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.website-name {
+  font-family: 'Handlee', cursive;
+  font-size: 35px;
 }
