@@ -7,7 +7,7 @@ const TipForm = (props) => {
         Please feel free to add any tips or best practices you have learned
         while on your own work from home journey!
       </h2>
-      <form onSubmit={props.onSubmit}>
+      <form onSubmit={props.onSubmit} className="form">
         <input
           type="text"
           onChange={props.onChange}
@@ -20,7 +20,7 @@ const TipForm = (props) => {
           name="description"
           placeholder={'Your tip'}
         />
-        <button>Submit</button>
+        <button className="button">Submit</button>
       </form>
     </div>
   );

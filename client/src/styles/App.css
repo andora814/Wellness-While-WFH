@@ -14,15 +14,6 @@ header nav a {
   margin: 0 1em;
 }
 
-/* footer {
-  background-color:  #f6e5e2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3em;
-  color: black
-} */
-
 .tip-container {
   display: grid;
   flex-direction: 1fr 1fr 1fr;
@@ -40,12 +31,12 @@ header nav a {
   border-radius: 25px;
   background-color: #5F8575;
   margin: auto;
+  color: #e7eeeb;
 }
 
 img {
   border-radius: 25px;
-  width: 100%;
-  height: 300px;
+
 }
 
 body {
@@ -56,17 +47,25 @@ body {
   color: black;
 } 
 
-
-.pose-content .image-container {
-  width: 95vw;
-  margin: auto;
-  padding: 1em 0;
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
 }
 
-.image-container div {
-  margin: auto;
-  width: 90%;
-  word-wrap: break-word;
+input {
+  height: 40px;
+  width: 200px;
+  font-size: 15px;
+  margin: .5em;
+  border-radius: 10px;
+}
+
+.button {
+  height: 40px;
+  border-radius: 15px;
+  font-size: 20px;
+  margin: .5em;
 }
 
 .container-grid {
@@ -91,6 +90,10 @@ h1 {
 
 h2 {
   font-size: 30px;
+}
+
+h3 {
+  font-size: 25px
 }
 
 .about-me {
@@ -120,18 +123,18 @@ h2 {
 .tip-card {
   background-color: #e7eeeb;
   color: black;
-  margin: auto;
+  margin: 0.5em;
+  padding: 1em;
   border-style: solid;
   border-color: #5F8575;
 }
 
-.home {
+.home-div, .page-div, .tip-div, .yoga-page-div {
   margin: auto;
   padding: 3em;
 }
 
 .pose-content {
   padding: 1em;
-
   border-radius: 25px;
 }

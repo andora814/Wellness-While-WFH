@@ -28,9 +28,15 @@ const TipCard = (props) => {
         <h3>
           "{props.description}" ~{props.name}
         </h3>
-        <button onClick={props.onClick} id={props._id} {...props}>
+        <button
+          onClick={props.onClick}
+          id={props._id}
+          {...props}
+          className="button"
+        >
           Delete Tip
         </button>
+
         <br></br>
         <EditTipForm
           onChange={handleEditForm}

@@ -40,8 +40,8 @@ const TipPage = (props) => {
   };
 
   return (
-    <div>
-      <section className="tips">
+    <div className="tip-div">
+      <section>
         <h1> Tips and Tricks </h1>
 
         <TipForm onChange={handleForm} onSubmit={handleCreate} />

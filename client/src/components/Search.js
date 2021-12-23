@@ -2,16 +2,20 @@ import React from 'react';
 
 const Search = (props) => {
   return (
-    <form onSubmit={props.onSubmit}>
-      <input
-        type="text"
-        name="search"
-        value={props.value}
-        placeholder="Search Poses"
-        onChange={props.onChange}
-      ></input>
-      <button type="submit">Search</button>
-    </form>
+    <div className="form">
+      <form onSubmit={props.onSubmit}>
+        <input
+          type="text"
+          name="search"
+          value={props.value}
+          placeholder="Search by benefits"
+          onChange={props.onChange}
+        ></input>
+        <button type="submit" className="button">
+          Search
+        </button>
+      </form>
+    </div>
   );
 };
 

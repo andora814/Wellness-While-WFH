@@ -4,7 +4,7 @@ import './styles/App.css';
 import Header from './components/Header.js';
 import Home from './pages/Home.js';
 import About from './pages/About.js';
-import Footer from './components/Footer.js';
+
 import TipPage from './pages/TipPage.js';
 import YogaPosePage from './pages/YogaPosePage.js';
 import axios from 'axios';
