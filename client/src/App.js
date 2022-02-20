@@ -4,7 +4,7 @@ import './styles/App.css';
 import Header from './components/Header.js';
 import Home from './pages/Home.js';
 import About from './pages/About.js';
-
+import { BASE_URL } from '../globals';
 import TipPage from './pages/TipPage.js';
 import YogaPosePage from './pages/YogaPosePage.js';
 import axios from 'axios';
@@ -20,7 +20,7 @@ const App = () => {
   }, []);
 
   const getPoses = async () => {
-    const res = await axios.get('http://localhost:3001/poses');
+    const res = await axios.get(`${BASE_URL}/poses`);
     setPoses(res.data.poses);
   };
 

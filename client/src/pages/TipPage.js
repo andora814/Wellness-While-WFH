@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { BASE_URL } from '../globals';
 import axios from 'axios';
 import TipCard from '../components/TipCard.js';
 import TipForm from '../components/TipForm.js';
@@ -16,22 +16,23 @@ const TipPage = (props) => {
   });
 
   const getTips = async () => {
-    const res = await axios.get('http://localhost:3001/tips');
+    const res = await axios.get(`${BASE_URL}/tips`);
     setTips(res.data.tips);
   };
 
   const handleForm = async (e) => {
     await setForm({ ...form, [e.target.name]: e.target.value });
+    console.log(form);
   };
 
   const handleCreate = async (e) => {
     e.preventDefault();
-    await axios.post('http://localhost:3001/addtip', form);
+    await axios.post(`${BASE_URL}/addtip`, form);
   };
 
   const handleDelete = async (e) => {
     e.preventDefault();
-    await axios.delete(`http://localhost:3001/tips/${e.target.id}`);
+    await axios.delete(`${BASE_URL}/tips/${e.target.id}`);
   };
 
   return (

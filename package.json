@@ -3,6 +3,7 @@
     "axios": "^0.24.0",
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
     "express": "^4.17.1",
     "mongoose": "^6.1.2",
     "nodemon": "^2.0.15"
@@ -10,7 +11,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build": "cd client && rm -rf build && npm install && npm run build"
   },
   "name": "wellness-while-wfh",
   "description": "[LinkedIn](https://www.linkedin.com/in/dorancsmith/) *** ### ***Description*** #### This is a website to help you focus on self care and wellness while working from home. #### In 2020, many of us were forced to work from home due to COVID-19. As a result, companies are re-evaluating the “future of work”, and remote work will most likely become part of our new normal. It is so easy for “working from home” to feel like “living at work”, which makes self-care extremely important. Please take advantage of this site as a way to stay healthy, happy and productive!",
