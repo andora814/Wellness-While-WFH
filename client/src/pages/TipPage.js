@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BASE_URL } from '../globals';
+import { BASE_URL } from '../globals.js';
 import axios from 'axios';
 import TipCard from '../components/TipCard.js';
 import TipForm from '../components/TipForm.js';

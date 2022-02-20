@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import EditTipForm from './EditTipForm';
 import axios from 'axios';
-import { BASE_URL } from '../globals';
+import { BASE_URL } from '../globals.js';
 
 const TipCard = (props) => {
   const [tipName, setTipName] = useState(props.name);
