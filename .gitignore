@@ -3,3 +3,5 @@
 
 # connection URL: mongodb+srv://B3rn3d00dl32020:<password>@tipsdatabase.edjqh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 # atlas password: B3rn3d00dl32020
+
+# mongodb+srv://B3rn3d00dl32020:<password>@tipsdatabase.edjqh.mongodb.net/?retryWrites=true&w=majority
